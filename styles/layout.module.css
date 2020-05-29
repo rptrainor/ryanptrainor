@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+}
+.avatar {
+  border-radius: 50%;
+  width: 20rem;
+  margin: 10rem auto 2rem;
+}
+/* Small devices (Mobile, portrait) */
+@media (min-width: 0px) and (max-width: 567px) {
+  /* .container {
+    width: 200rem;
+  } */
+}
+
+/* Medium devices (Mobile, landscape) */
+@media (min-width: 568px) and (max-width: 767px) {
+}
+
+/* Large devices (tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Extra large devices (laptop) */
+@media (min-width: 1024px) and (max-width: 1365px) {
+}
+/* Extra large devices (desktop) */
+@media (min-width: 1366px) {
+}

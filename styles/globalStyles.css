@@ -1,133 +1,90 @@
 @font-face {
-    font-family: "Lato", sans-serif;
-    font-family: "Montserrat", sans-serif;
-    src: url("https://fonts.googleapis.com/css?family=Lato:400|Montserrat:500,600,700,800,900&display=swap&subset=latin-ext");
-    font-weight: normal;
-    font-style: normal;
-  }
-  html {
-    box-sizing: border-box;
-    font-size: 10px;
-    min-height: 100vh;
-    background-color: "#ff3";
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  body {
-    padding: 0;
-    margin: 0 auto;
-  
-    font-size: 1.5rem;
-    line-height: 1;
-    white-space: pre-wrap;
-    max-width: 2000px;
-  }
-  div {
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    text-decoration: none;
-    color: #dedede;
-    border: 0;
-    font-size: 2rem;
-    font-weight: 900;
-    padding: 0.5rem;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-  }
-  .flag {
-    background-color: #193448;
-    border-radius: 1rem;
-    border: 0.2rem solid #27323a;
-    background-color: #2a4357;
-  }
-  button {
-    color: #dedede;
-    border: 0;
-    font-size: 1.5rem;
-    font-weight: 900;
-    background-color: HSL(205, 49%, 19%);
-    padding: 0.5rem;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-  }
-  fieldset {
-    border: 0;
-  }
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    color: #e6b919;
-    font-weight: 900;
-    padding: 0;
-    margin: 0;
-  }
-  h2 {
-    font-family: "Montserrat", sans-serif;
-    color: #e6b919;
-    font-weight: 700;
-    padding: 0;
-    margin: 0;
-  }
-  h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #19e652;
-    font-weight: 700;
-    padding: 0;
-    margin: 0;
-  }
-  h4 {
-    font-family: "Montserrat", sans-serif;
-    color: #dedede;
-    font-weight: 600;
-    padding: 0;
-    margin: 0;
-  }
-  h5 {
-    font-family: "Montserrat", sans-serif;
-    color: #dedede;
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
-  }
-  h6 {
-    font-family: "Montserrat", sans-serif;
-    color: #dedede;
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
-  }
-  p {
-    font-family: "Lato", sans-serif;
-    color: #f3f;
-    font-weight: 400;
-  }
-  input[type="text"],
-  input[type="textarea"],
-  textarea {
-    font-size: 1.2rem;
-  }
-  
-  /* Small devices (Mobile, portrait) */
-  @media (min-width: 0px) and (max-width: 567px) {
-  }
-  
-  /* Medium devices (Mobile, landscape) */
-  @media (min-width: 568px) and (max-width: 767px) {
-  }
-  
-  /* Large devices (tablet) */
-  @media (min-width: 768px) and (max-width: 1023px) {
-  }
-  
-  /* Extra large devices (laptop) */
-  @media (min-width: 1024px) and (max-width: 1365px) {
-  }
-  /* Extra large devices (desktop) */
-  @media (min-width: 1366px) {
-  }
+  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700&display=swap");
+}
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background-color: #f5f4e9;
+  min-width: 100% !important;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1;
+  white-space: pre-wrap;
+  min-width: 100%;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
+button {
+  color: #dedede;
+  border: 0.2rem solid #00699e;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #663399;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-family: "Oswald", sans-serif;
+  color: #663399;
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #663399;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+p,
+li {
+  font-family: "Open Sans", sans-serif;
+  color: #404040;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 0px) and (max-width: 567px) {
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+}
+@media (min-width: 1366px) {
+}

@@ -1,7 +1,4 @@
-export default function Home() {
-  return (
-    <div>
-      <p>index.js</p>
-    </div>
-  );
+import Home from "../components/templates/Home";
+export default function AppPage() {
+  return <Home />;
 }
