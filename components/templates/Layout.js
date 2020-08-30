@@ -59,7 +59,7 @@ export default function Layout({ children }) {
           onClick={() => setWasFooterClicked(true)}
         >
           {wasFooterClicked ? (
-            <p>ryan@ryanptrainor.com</p>
+            <p> ryan@ryanptrainor.com </p>
           ) : (
             <p>Send me an email &amp; let's get your project going! 🚀</p>
           )}
