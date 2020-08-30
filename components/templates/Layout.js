@@ -27,14 +27,14 @@ export default function Layout({ children }) {
           name="twitter:card"
           content={`https://res.cloudinary.com/dx35aw3ub/image/upload/v1578940252/ryan_i2wi97.jpg`}
         />
-        <script
+        {/* <script
           id="mcjs"
           dangerouslySetInnerHTML={{
             __html: `
             !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0d8032ce5a1cdac3dbed01835/dfbf7f47dbe49c37ec78b1d46.js");
                 `,
           }}
-        />
+        /> */}
       </Head>
       <div className={layoutStyles.container}>
         <img src="/images/ryan.jpeg" alt="Ryan Trainor" className="avatar" />
@@ -59,7 +59,7 @@ export default function Layout({ children }) {
           onClick={() => setWasFooterClicked(true)}
         >
           {wasFooterClicked ? (
-            <p> ryan@ryanptrainor.com </p>
+            <p>ryan@ryanptrainor.com</p>
           ) : (
             <p>Send me an email &amp; let's get your project going! 🚀</p>
           )}
