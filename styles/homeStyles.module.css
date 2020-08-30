@@ -45,6 +45,10 @@
   .buttonText {
     font-size: 1.2rem;
   }
+  .screenGrab {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 568px) and (max-width: 767px) {

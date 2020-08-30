@@ -93,10 +93,20 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <img
-        src={iosURLArray[state.value.view || state.value.pause]}
-        style={{ width: "30rem" }}
-      />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%"
+        }}
+      >
+        <img
+          src={iosURLArray[state.value.view || state.value.pause]}
+          className={HomeStyles.screenGrab}
+        />
+      </div>
     </div>
   );
 }
