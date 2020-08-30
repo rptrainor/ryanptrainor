@@ -1,13 +1,16 @@
 @font-face {
-  font-family: "Oswald", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700&display=swap");
+  font-family: "Lato", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
 }
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background-color: #f5f4e9;
-  min-width: 100% !important;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(27, 179, 255, 0.13) 100%
+  );
 }
 *,
 *:before,
@@ -20,62 +23,179 @@ body {
   font-size: 1.5rem;
   line-height: 1;
   white-space: pre-wrap;
-  min-width: 100%;
 }
 div {
   margin: 0;
   padding: 0;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 a {
-  text-decoration: none;
+  color: #e60073;
+  /* background-color: rgb(255,255,255); */
   font-size: 2rem;
   padding: 0.5rem;
-  margin: 0;
-  font-family: "Oswald", sans-serif;
+  margin: 0.5rem;
+  font-family: "Lato", sans-serif;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #e60073;
+}
+a:hover {
+  text-decoration: underline;
+  color: #009ceb;
+  text-decoration-color: #ffda00;
 }
 button {
-  color: #dedede;
-  border: 0.2rem solid #00699e;
+  color: #e60073;
+  border: 0.25rem solid #e60073;
+  background-color: transparent;
   font-size: 1.5rem;
   padding: 0.5rem;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  border-radius: 1rem;
+  font-family: "Lato", sans-serif;
   cursor: pointer;
 }
-h1 {
-  font-family: "Oswald", sans-serif;
-  color: #663399;
-  font-weight: 900;
-  padding: 0;
-  margin: 0;
+button p {
+  color: #e60073;
 }
-h2 {
-  font-family: "Oswald", sans-serif;
-  color: #663399;
-  font-weight: 800;
+button:hover {
+  color: #009ceb;
+  text-decoration: underline;
+  border-color: #ffda00;
+  text-decoration-color: #ffda00;
+}
+button:hover p {
+  color: #009ceb;
+}
+.active {
+  color: #009ceb;
+  text-decoration: underline;
+  border-color: #ffda00;
+  text-decoration-color: #ffda00;
+}
+button:focus {
+  outline: none;
+}
+h1 {
+  font-family: "Lato", sans-serif;
+  color: #009ceb;
+  font-weight: 400;
   font-size: 3rem;
   padding: 0;
-  margin: 0;
+  margin: 0 0 2rem 0;
+}
+h2 {
+  font-family: "Lato", sans-serif;
+  color: #009ceb;
+  font-weight: 300;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 1rem;
 }
 h3 {
-  font-family: "Open Sans", sans-serif;
-  color: #663399;
-  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  color: #514e5e;
+  background-color: #ffda00;
+  transform: rotate(-3deg);
+  font-weight: 100;
   font-size: 2rem;
-  padding: 0;
-  margin: 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0 1rem 1rem 1rem;
 }
-p,
+h4 {
+  font-family: "Lato", sans-serif;
+  color: #514e5e;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0 1rem 0 1rem;
+}
 li {
-  font-family: "Open Sans", sans-serif;
-  color: #404040;
-  font-weight: 300;
-  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: #514e5e;
+  font-size: 1.8rem;
+  font-weight: 100;
+  padding: 0rem 1rem 0.5rem 1rem;
+  margin: 0 1rem 0 1rem;
+}
+p {
+  font-family: "Lato", sans-serif;
+  color: #514e5e;
+  font-weight: 100;
+  font-size: 1.8rem;
   line-height: 1.2;
+  margin: 0.5rem;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  background-color: #ffda00;
+}
+footer p {
+  font-family: "Lato", sans-serif;
+  color: #514e5e;
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 1rem;
+}
+footer a {
+  margin: 0;
+  text-decoration-color: #514e5e;
+}
+footer:hover a {
+  text-decoration-color: #e60073;
+}
+footer:hover p {
+  color: #009ceb;
+}
+main {
+  min-height: calc(100vh - 36.6rem);
+}
+.navbar {
+  width: 100vw;
+  max-width: 100rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.avatar {
+  border-radius: 50%;
+  width: 10rem;
+  margin: 4rem 0 1rem 0;
 }
 
 @media (min-width: 0px) and (max-width: 567px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    justify-content: space-between;
+    margin: 0;
+  }
+  .navbar a {
+    font-size: 1.4rem;
+    text-align: center;
+    flex-grow: 1;
+  }
+  footer {
+    flex-wrap: nowrap;
+  }
+  footer p {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0;
+  }
+  button {
+    padding: 0.5rem 0 0;
+  }
 }
 
 @media (min-width: 568px) and (max-width: 767px) {

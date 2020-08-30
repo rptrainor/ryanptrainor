@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@xstate/react": "^0.8.1",
     "next": "9.4.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "xstate": "^4.13.0"
   }
 }

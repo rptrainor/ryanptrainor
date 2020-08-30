@@ -1,0 +1,39 @@
+.projectCover {
+  border: 1rem solid #009ceb;
+  border-radius: 1rem;
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+  max-width: 30rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectCover p {
+  color: #514e5e;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 10;
+}
+.projectCover img {
+  width: 28rem;
+  height: 28rem;
+  position: absolute;
+  border-radius: 1rem;
+  filter: opacity(30%);
+}
+
+@media (min-width: 0px) and (max-width: 567px) {
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+}
+@media (min-width: 1366px) {
+}

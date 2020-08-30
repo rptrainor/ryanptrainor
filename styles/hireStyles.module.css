@@ -1,0 +1,42 @@
+.hireContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  max-width: 80rem;
+}
+.hireContainer h4 {
+  margin: 0.5rem;
+}
+.hireContainer h2 {
+  text-align: center;
+  width: 100%;
+  color: #514e5e;
+  font-size: 4rem;
+}
+@media (min-width: 0px) and (max-width: 567px) {
+  .hireContainer {
+    margin-top: 0;
+  }
+  .hireContainer h2 {
+    text-align: center;
+    width: 100%;
+    color: #514e5e;
+    font-size: 3rem;
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+}
+@media (min-width: 1366px) {
+}
