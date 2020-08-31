@@ -35,7 +35,7 @@ export default function Home() {
           <li>
             Responsive design that works across Mobile, Tablet, and Desktop
           </li>
-          <li>Authentication &amp; user account creatation / management</li>
+          <li>Authentication &amp; user account creation / management</li>
           <li>
             Healthy social context with community guidelines &amp; best
             practices

@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className="navbar">
       <Link href="/">
         <a className={router.route == "/" ? "active" : "inactive"}>
-          What I have built?
+          What have I built?
         </a>
       </Link>
       <Link href="/hire">
