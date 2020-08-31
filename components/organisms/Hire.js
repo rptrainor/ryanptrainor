@@ -17,6 +17,7 @@ export default function Hire() {
       >
         @rptrainor
       </a>
+      <a href="https://wa.me/16127475815?text=How%20can%20you%20help%20me?">+1.612.747.5815</a>
     </div>
   );
 }
