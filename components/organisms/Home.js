@@ -27,30 +27,6 @@ export default function Home() {
   return (
     <div className={HomeStyles.projectContainer}>
       <div className={HomeStyles.projectInfoContainer}>
-        <div>
-          {Object.keys(state.value)[0] == "pause" ? (
-            <button onClick={() => send("PLAY")}>
-              <PlayCircleOutlined
-                style={{
-                  fontSize: "4rem",
-                  marginBottom: "0.5rem",
-                }}
-              />
-              <p className="buttonText">Play Slideshow</p>
-            </button>
-          ) : (
-            <button onClick={() => send("PAUSE")}>
-              <PauseCircleOutlined
-                style={{
-                  fontSize: "4rem",
-                  marginBottom: "0.5rem",
-                }}
-                className="button"
-              />
-              <p>Pause Slideshow</p>
-            </button>
-          )}
-        </div>
         <div className={HomeStyles.projectDetailsList}>
           <h4>Title: Pushquery</h4>
           <h4>Platform: iOS, Android, and Web</h4>
@@ -64,6 +40,32 @@ export default function Home() {
             Healthy social context with community guidelines &amp; best
             practices
           </li>
+          <div style={{ alignSelf: "center" }}>
+            <a href="#slideshow">
+              {Object.keys(state.value)[0] == "pause" ? (
+                <button onClick={() => send("PLAY")}>
+                  <PlayCircleOutlined
+                    style={{
+                      fontSize: "4rem",
+                      marginBottom: "0.5rem",
+                    }}
+                  />
+                  <p className="buttonText">Play Slideshow</p>
+                </button>
+              ) : (
+                <button onClick={() => send("PAUSE")}>
+                  <PauseCircleOutlined
+                    style={{
+                      fontSize: "4rem",
+                      marginBottom: "0.5rem",
+                    }}
+                    className="button"
+                  />
+                  <p>Pause Slideshow</p>
+                </button>
+              )}
+            </a>
+          </div>
           <div>
             <h4>Technology Used:</h4>
             <li>React &amp; React Native</li>
@@ -99,12 +101,13 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          width: "100%"
+          width: "100%",
         }}
       >
         <img
           src={iosURLArray[state.value.view || state.value.pause]}
           className={HomeStyles.screenGrab}
+          id="slideshow"
         />
       </div>
     </div>

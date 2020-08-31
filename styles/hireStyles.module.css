@@ -2,18 +2,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 2rem;
-  max-width: 80rem;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 .hireContainer h4 {
+  text-align: left;
   margin: 0.5rem;
+  width: 100%;
 }
 .hireContainer h2 {
-  text-align: center;
+  text-align: left;
   width: 100%;
   color: #514e5e;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .hireContainer h3 {
     margin: 1rem;
@@ -23,12 +26,12 @@
     margin-top: 0;
   }
   .hireContainer h2 {
-    text-align: center;
+    text-align: left;
     width: 100%;
     color: #514e5e;
-    font-size: 3rem;
-    max-width: 95vw;
-    margin: 0 auto;
+    font-size: 2rem;
+    max-width: 90vw;
+    margin: 0.5rem auto 0.5rem;
     padding: 0;
   }
 }
