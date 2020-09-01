@@ -40,7 +40,7 @@ export default function Home() {
             Healthy social context with community guidelines &amp; best
             practices
           </li>
-          <div style={{ alignSelf: "center" }}>
+          <div style={{ alignSelf: "center", margin: "1rem" }}>
             <a href="#slideshow">
               {Object.keys(state.value)[0] == "pause" ? (
                 <button onClick={() => send("PLAY")}>
