@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 
 export default function Navbar() {
   const router = useRouter();
-  console.log(router.route);
-  const pathname = router.route;
-  console.log(router.route == "/hire");
+  // console.log(router.route);
+  // const pathname = router.route;
+  // console.log(router.route == "/hire");
   return (
     <div className="navbar">
       <Link href="/">
